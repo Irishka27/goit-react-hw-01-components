@@ -3,21 +3,21 @@ import s from './TransactionHistory.module.css';
 
 function TransactionHistory({ items }) {
   return (
-    <table>
+    <table className={s.table}>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={s.table_th}>Type</th>
+          <th className={s.table_th}>Amount</th>
+          <th className={s.table_th}>Currency</th>
         </tr>
       </thead>
 
       <tbody>
         {items.map((item) => (
           <tr key={item.id}>
-            <td>{item.type}</td>
-            <td>{item.amount}</td>
-            <td>{item.currency}</td>
+            <td className={s.table_td}>{item.type}</td>
+            <td className={s.table_td}>{item.amount}</td>
+            <td className={s.table_td}>{item.currency}</td>
           </tr>
         ))}
       </tbody>
