@@ -20,15 +20,17 @@ function App() {
             avatar={user.avatar}
             followers={user.stats.followers}
             views={user.stats.views}
-            likes={user.stats.likes}
-          /></Section>
-          <Section title="Task 2: User Files Upload Statistics">
-         <Statistics stats={statData} /></Section>
-         <Section title="Task 3: User Friends List">
-         <FriendList items={friends} /></Section>
-         <Section title="Task 4: User Transactions">
-         <TransactionHistory items={transactions} />
-         </Section>
+            likes={user.stats.likes}/>
+        </Section>
+        <Section title="Task 2: User Files Upload Statistics">
+          <Statistics stats={statData}/>
+        </Section>
+        <Section title="Task 3: User Friends List">
+         <FriendList items={friends}/>
+        </Section>
+        <Section title="Task 4: User Transactions">
+         <TransactionHistory items={transactions}/>
+        </Section>
       </>
     );
   }
