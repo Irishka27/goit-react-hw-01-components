@@ -12,7 +12,7 @@ import Section from 'components/Section/Section';
 function App() {
     return (
       <>
-        <Section title="Task 1: User Profile (hoverable)">
+        <Section>
           <Profile
             name={user.name}
             tag={user.tag}
@@ -22,13 +22,13 @@ function App() {
             views={user.stats.views}
             likes={user.stats.likes}/>
         </Section>
-        <Section title="Task 2: User Files Upload Statistics">
-          <Statistics stats={statData}/>
+        <Section>
+          <Statistics title="Upload stats"stats={statData}/>
         </Section>
-        <Section title="Task 3: User Friends List">
+        <Section>
          <FriendList items={friends}/>
         </Section>
-        <Section title="Task 4: User Transactions">
+        <Section>
          <TransactionHistory items={transactions}/>
         </Section>
       </>
