@@ -19,13 +19,14 @@ function Statistics({title, stats }) {
 }
 
 Statistics.propTypes = {
-  statData: PropTypes.arrayOf(
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.number,
       label: PropTypes.string,
       percentage: PropTypes.number,
     })
-  ),
+  ).isRequired,
 };
 
 export default Statistics;
